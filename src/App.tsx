@@ -19,12 +19,12 @@ const CERTIFICATE_FIELDS: CertificateField[] = [
   },
   {
     label: 'Data de certificação',
-    value: '11/11/2026',
+    value: '21/11/2026',
     isTabular: true,
   },
   {
     label: 'Validade',
-    value: '11/11/2027',
+    value: '21/11/2027',
     isHighlighted: true,
     isTabular: true,
   },
@@ -40,7 +40,7 @@ const CERTIFICATE_FIELDS: CertificateField[] = [
 
 export default function App() {
   return (
-    <div className="min-h-dvh flex flex-col overflow-x-hidden bg-[#fafafa] text-[#4e5563]">
+    <div className="min-h-dvh flex flex-col overflow-x-hidden bg-white text-[#4e5563]">
       {/* Header Banner */}
       <header className="w-full flex items-center justify-center px-4 py-8 sm:h-[215px] sm:px-6 sm:py-0 bg-[linear-gradient(175deg,#e99532_0%,#e56d28_52%,#de4626_100%)]">
         <InapemLogo />
