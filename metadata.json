@@ -1,0 +1,6 @@
+{
+  "name": "Certificado Digital - INAPEM",
+  "description": "Portal de verificação de Certificado Digital do Instituto Nacional de Apoio às Micro, Pequenas e Médias Empresas (INAPEM).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
