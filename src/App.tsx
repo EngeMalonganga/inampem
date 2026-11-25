@@ -40,9 +40,9 @@ const CERTIFICATE_FIELDS: CertificateField[] = [
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#fafafa] text-[#4e5563]">
+    <div className="min-h-dvh flex flex-col overflow-x-hidden bg-[#fafafa] text-[#4e5563]">
       {/* Header Banner */}
-      <header className="w-full h-[185px] sm:h-[215px] flex items-center justify-center px-6 bg-[linear-gradient(175deg,#e99532_0%,#e56d28_52%,#de4626_100%)]">
+      <header className="w-full flex items-center justify-center px-4 py-8 sm:h-[215px] sm:px-6 sm:py-0 bg-[linear-gradient(175deg,#e99532_0%,#e56d28_52%,#de4626_100%)]">
         <InapemLogo />
       </header>
 
@@ -50,11 +50,11 @@ export default function App() {
       <main className="flex-1 w-full">
         <section
           aria-labelledby="certificate-heading"
-          className="w-full max-w-[760px] mx-auto px-6 sm:px-10 pt-9 pb-16 sm:pt-12"
+          className="w-full max-w-[760px] mx-auto px-4 sm:px-10 pt-7 pb-12 sm:pt-12 sm:pb-16"
         >
           <h1
             id="certificate-heading"
-            className="text-[22px] sm:text-[24px] font-medium tracking-[-0.015em] text-[#4d5462] mb-6 sm:mb-8"
+            className="text-[20px] sm:text-[24px] font-medium tracking-[-0.015em] text-[#4d5462] mb-4 sm:mb-8"
           >
             Certificado Digital
           </h1>
@@ -63,13 +63,13 @@ export default function App() {
             {CERTIFICATE_FIELDS.map((field) => (
               <div
                 key={field.label}
-                className="grid grid-cols-[158px_1fr] sm:grid-cols-[240px_1fr] items-start gap-3 sm:gap-6 py-4 sm:py-5"
+                className="flex flex-col gap-1 py-4 sm:grid sm:grid-cols-[240px_1fr] sm:items-start sm:gap-6 sm:py-5"
               >
-                <dt className="text-[14.5px] sm:text-[15.5px] font-semibold text-[#545c69] leading-snug">
+                <dt className="text-[12.5px] sm:text-[15.5px] font-semibold uppercase tracking-[0.04em] sm:normal-case sm:tracking-normal text-[#8a919c] sm:text-[#545c69] leading-snug">
                   {field.label}
                 </dt>
                 <dd
-                  className={`text-[14.5px] sm:text-[15.5px] leading-snug break-words ${
+                  className={`text-[15px] sm:text-[15.5px] leading-snug break-words ${
                     field.isTabular ? 'tabular-nums' : ''
                   } ${
                     field.isHighlighted

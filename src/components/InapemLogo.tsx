@@ -3,13 +3,13 @@ import React from 'react';
 export const InapemLogo: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
     <div
-      className={`inline-flex items-center justify-center gap-3.5 select-none ${className}`}
+      className={`inline-flex items-center justify-center gap-2.5 sm:gap-3.5 select-none max-w-full ${className}`}
       aria-label="INAPEM"
     >
       {/* Swirling Ribbon Emblem */}
       <svg
         viewBox="0 0 110 78"
-        className="h-12 w-auto sm:h-14 shrink-0"
+        className="h-10 w-auto sm:h-14 shrink-0"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
@@ -77,7 +77,7 @@ export const InapemLogo: React.FC<{ className?: string }> = ({ className = '' })
       </svg>
 
       {/* Wordmark */}
-      <span className="text-[2.15rem] sm:text-[2.5rem] font-bold tracking-[-0.035em] leading-none text-[#4c4541]">
+      <span className="text-[1.85rem] sm:text-[2.5rem] font-bold tracking-[-0.035em] leading-none text-[#4c4541]">
         inapem
       </span>
     </div>
